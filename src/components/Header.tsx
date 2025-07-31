@@ -36,32 +36,32 @@ const Header = () => {
           <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-lg">R&R</span>
           </div>
-          <span className="text-xl font-bold text-foreground">Raas & Roots</span>
+          <span className={`text-xl font-bold ${isScrolled ? 'text-foreground' : 'text-white'}`}>Raas & Roots</span>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-foreground hover:text-primary transition-colors duration-200"
+            className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors duration-200`}
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection('about')}
-            className="text-foreground hover:text-primary transition-colors duration-200"
+            className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors duration-200`}
           >
             About
           </button>
           <button
             onClick={() => scrollToSection('features')}
-            className="text-foreground hover:text-primary transition-colors duration-200"
+            className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors duration-200`}
           >
             Functionality
           </button>
           <button
             onClick={() => scrollToSection('faqs')}
-            className="text-foreground hover:text-primary transition-colors duration-200"
+            className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-primary transition-colors duration-200`}
           >
             FAQs
           </button>

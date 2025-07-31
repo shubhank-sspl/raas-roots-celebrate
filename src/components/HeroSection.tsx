@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
-import { Download, Play } from 'lucide-react';
 import heroImage from '@/assets/hero-garba-night.jpg';
+import AppStoreButton from '@/components/AppStoreButton';
+import GooglePlayButton from '@/components/GooglePlayButton';
 
 const HeroSection = () => {
   return (
@@ -34,19 +35,16 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-delay-2">
           <Button
             size="lg"
-            className="bg-gradient-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-lg px-8 py-4"
+            className="bg-black hover:bg-black/80 border border-white/20 hover:shadow-glow transition-all duration-300 transform hover:scale-105 p-0 h-12 w-40"
           >
-            <Download className="mr-2 h-5 w-5" />
-            Download on iOS
+            <AppStoreButton />
           </Button>
           
           <Button
             size="lg"
-            variant="outline"
-            className="border-white text-white hover:bg-white hover:text-foreground transition-all duration-300 transform hover:scale-105 text-lg px-8 py-4"
+            className="bg-black hover:bg-black/80 border border-white/20 hover:shadow-glow transition-all duration-300 transform hover:scale-105 p-0 h-12 w-40"
           >
-            <Play className="mr-2 h-5 w-5" />
-            Download on Play Store
+            <GooglePlayButton />
           </Button>
         </div>
       </div>

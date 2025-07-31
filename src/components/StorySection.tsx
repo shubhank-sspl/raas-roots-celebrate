@@ -60,16 +60,28 @@ const StorySection = () => {
               </div>
             </div>
             
-            {/* Timeline dots */}
-            <div className="flex items-center space-x-4 pt-6">
-              <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-destructive rounded-full"></div>
-                <span className="text-xs text-muted-foreground mt-1">Chaos</span>
+            {/* Transformation Visual */}
+            <div className="flex items-center justify-center space-x-6 pt-8">
+              <div className="bg-card rounded-xl p-6 shadow-warm border-l-4 border-destructive transform -rotate-1">
+                <div className="text-center">
+                  <div className="text-2xl mb-2">😤</div>
+                  <div className="text-sm font-semibold text-destructive">Before</div>
+                  <div className="text-xs text-muted-foreground mt-1">Chaos & Confusion</div>
+                </div>
               </div>
-              <div className="flex-1 h-0.5 bg-gradient-to-r from-destructive to-primary"></div>
+              
               <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-primary rounded-full animate-glow-pulse"></div>
-                <span className="text-xs text-muted-foreground mt-1">Solution</span>
+                <div className="w-8 h-0.5 bg-gradient-to-r from-destructive to-primary mb-2"></div>
+                <div className="text-primary text-lg font-bold">→</div>
+                <div className="w-8 h-0.5 bg-gradient-to-r from-destructive to-primary mt-2"></div>
+              </div>
+              
+              <div className="bg-card rounded-xl p-6 shadow-glow border-l-4 border-primary transform rotate-1">
+                <div className="text-center">
+                  <div className="text-2xl mb-2">🎉</div>
+                  <div className="text-sm font-semibold text-primary">After</div>
+                  <div className="text-xs text-muted-foreground mt-1">Seamless Celebration</div>
+                </div>
               </div>
             </div>
           </div>
